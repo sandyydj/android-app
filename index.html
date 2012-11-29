@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Page</title>
+  <title>Stundenplan App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./jquerymobile.min.css" />
   <script src="./jquery.min.js"></script>
   <script src="./jquerymobile.min.js"></script>
+  <script src="./selectboxes.js"></script>
   <script src="./app.js"></script>
 </head>
 <body>
@@ -13,15 +14,40 @@
 <div data-role="page">
 
   <div data-role="header">
-    <h1>My Title</h1>
-  </div><!-- /header -->
+    <h1>Stundenplan App</h1>
+  </div>
 
-  <div data-role="content">
-    <iframe src="http://stupid.gso-koeln.de/47/c/c00038.htm"></iframe>
-    <p>Hello world</p>
-  </div><!-- /content -->
+  <div id="content" data-role="content">
 
-</div><!-- /page -->
+    <select class="userType">
+      <option value="">Nutzer waehlen</option>
+      <option value="t">Lehrer</option>
+      <option value="c">Schueler</option>
+    </select>
+
+    <div id="shortTermSelectBoxHtml">
+      <select class="shortTerm">
+        <option value="">Kuerzel waehlen</option>
+      </select>
+    </div>
+
+    <iframe
+      id="iframeId"
+      vspace="0"
+      hspace="0"
+      allowTransparency="true"
+      scrolling="no"
+      marginWidth="0"
+      marginHeight="0"
+      frameBorder="0"
+      width="200"
+      height="200"
+      border="0"
+    >
+    </iframe>
+  </div>
+
+</div>
 
 </body>
 </html>
