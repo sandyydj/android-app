@@ -6,3 +6,7 @@ div#small {
   right: 15px;
   top: -5px;
 }
+
+iframe#iframeId {
+  margin: 0 auto;
+}
