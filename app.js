@@ -76,4 +76,11 @@ $(document).ready(function () {
 
     renderPlan()
   });
+
+
+
+  // refresh button
+  $("a#refreshButton").click(function () {
+    renderPlan();
+  });
 });
