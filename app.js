@@ -48,7 +48,7 @@ function getOptionsHtml() {
   $.each(window[userType + "Hash"], function (value, key) {
     html += '<option value="' + value + '">' + key + '</option>';
   });
-  console.log(html);
+
   return html;
 }
 
@@ -62,8 +62,9 @@ $(document).ready(function () {
     userType = $(".userType option:selected").val()
     localStorage.setItem("userType", userType);
 
-    $("div#shortTermSelectBoxHtml select").html(getOptionsHtml())
+    // prepare short term selection
     $("span.shortTerm").text("Kuerzel waehlen")
+    $("div#shortTermSelectBoxHtml select").html(getOptionsHtml())
   });
 
 
