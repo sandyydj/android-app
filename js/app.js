@@ -14,7 +14,7 @@ function renderPlan() {
     return;
   }
 
-  $("span.userType").text(userType === "t" ? "Lehrer" : "Schueler");
+  $("span.userType").text(userType === "t" ? "Lehrer" : "Klasse");
   $("span.shortTerm").text(window[userType + "Hash"][shortTerm]);
   $("div#shortTermSelectBoxHtml select").html(getOptionsHtml())
 

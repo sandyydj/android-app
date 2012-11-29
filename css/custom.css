@@ -1,12 +1,7 @@
-
 div#small {
   width: 100px;
   float: right;
   position: absolute;
   right: 15px;
   top: -5px;
-}
-
-iframe#iframeId {
-  margin: 0 auto;
 }
